@@ -1,0 +1,36 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset = "utf-8">
+  <meta name="description" content= "describes the best way to get from location to another">
+  <title>Travel agency page</title>
+  </head>
+  <body>
+    <h1>New York City</h1>
+    <p> If you are planning to travel into the city of the big apple these are the best locations to stop by: Statue of Liberty, Empire State Building, The Metropolitan Museum of Art, Time Square, Brooklyn Bridge </p>
+    <h2>Packages</h2>
+    <p>There are various trabel packages to choose off from, but the most recommended would be thse 3 options:7-day East Coast USA package, 3-4 Day New York City Itineraries, and Customizable Packages</p>
+    <ul>
+      <li><a href="https://www.freecodecamp.org/learn" target="_blank">Group Travels</a></li>
+      <li><a href="https://www.freecodecamp.org/learn" target="_blank">Private Tours</a></li>
+      </ul>
+    <h2>Top Itineraries</h2>
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank"><img src="https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg" alt = "colliseum"></a>
+      <figcaption>This is Rome not NYC</figcaption> 
+      </figure>
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank"><img src="https://cdn.freecodecamp.org/curriculum/labs/alps.jpg" alt="Alps"></a>
+      <figcaption>This is in Europe, far from the US</figcaption> 
+      </figure>
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank"><img src= "https://cdn.freecodecamp.org/curriculum/labs/sea.jpg" alt = "ocean"></a>
+      <figcaption>We are in the middle of  <strong>NOWHERE</strong></figcaption> 
+      </figure>
+    </body>
+  </html>
+
+** end of index.html **
+
