@@ -1,0 +1,36 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Video Compilation Page</title>
+</head>
+
+<body>
+    <main>
+        <h1>This is an Example Title</h1>
+        <p>This paragraph is supposed to introduce the topic of the page, but I'm not creative enough to think of anything. But hey good practice.</p>
+        <section>
+            <h2>Pokemon Section</h2>
+            <p>The video below is about pokemon. I'm not that creative</p>
+            <iframe src="https://www.youtube.com/embed/Vw6zP7n0ais?si=7QgQhb-oscBy1haG" title="Pokémon Omega Ruby and Pokémon Alpha Sapphire Animated Trailer" width="560" height="315"></iframe>
+        </section>
+        <section>
+            <h2>Yugioh Section</h2>
+            <p>This video below is about yugioh. I'm really not that creative</p>
+            <iframe src="https://www.youtube.com/embed/CGo5JryAClQ?si=TF3MGDAfgTvK_Swq" title="Yugioh Duelist Nexus TCG" width="560" height="315"></iframe>
+        </section>
+        <section>
+            <h2>Beyblade Section</h2>
+            <p>this video below is about beyblade. I'm ... well you get the point already.</p>
+            <iframe src = "https://www.youtube.com/embed/5uoQRvhds0A?si=UCQUKertWF1hAu_J" width="560" height="315" title = "Beyblade Destroyer Dome"></iframe>
+        </section>
+    </main>
+</body>
+
+</html>
+
+** end of index.html **
+
