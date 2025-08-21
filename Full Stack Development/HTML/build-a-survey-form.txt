@@ -1,0 +1,62 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">This is a Survery</h1>
+      <p id="description">Below this title is suppose to be a description of a survey, but I'm not that creative enought o think of a scenario</p>
+      </header>
+      <main>
+        <form id="survey-form">
+          <label for="name" id="name-label">Insert your name:</label>
+          <input required id="name" type="text" placeholder="ex: Michael Jordan"><br>
+          <label for="email" id="email-label">Insert your email:</label>
+          <input required id="email" type="email" placeholder="ex:___@gmail.com"><br>
+          <label for="number" id="number-label">Birth Year (Optional)</label>
+          <input id="number" type="number" min="1950" max="2025" placeholder="2025"></input><br>
+
+          
+            <label for="dropdown" name='RGB'>What is your favorite color?</label>
+              <select id="dropdown">
+                <option value="r">Red</option>
+                <option value="g">Green</option>
+                <option value="b">Blue</option>
+              </select>
+      
+          <fieldset>
+            <legend>Do you believe in religion</legend>
+            <label for="yes-option">Yes</label>
+            <input id="yes-option" type="radio", name="religion" value = "yes">
+            <label for="no-option">No</label> 
+            <input id="no-option" type="radio" name="religion" value = "no"> 
+            </fieldset>
+
+          <fieldset>
+              <legend>What are your reasons in learning to program</legend>
+              <label for="career">Career?</label>
+              <input type="checkbox" id="career" name="career" value="career">
+              <label for="money">Money?</label>
+              <input type="checkbox" id="money" name="money" value="career">
+              <label for="hobby">Hobby?</label>
+              <input type="checkbox" id="hobby" name="hobby" value="career">
+              </fieldset>  
+          
+          <label for="comments">Any additional comments you want to add?</label>
+          <textarea name="comments" id="comments"></textarea>
+          <button id="submit" type="submit">Submit</button>
+
+
+          </form>
+          
+        </main>
+  </body>
+</html>
+
+** end of index.html **
+
