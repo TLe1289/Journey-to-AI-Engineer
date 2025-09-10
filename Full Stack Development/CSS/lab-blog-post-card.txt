@@ -1,0 +1,71 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blog Post Card</title>
+</head>
+<body>
+    <div class="blog-post-card">
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg" alt="Person on Computer" class="post-img">
+        <div class="post-content">
+            <h2 class="post-title">This is Google Docs</h2>
+            <p class="post-excerpt">I have nothing within my document type, but it would be cool to show you an image of my google docs.</p>
+            <a class="read-more" href="https://docs.google.com">Read More</a>
+            </div>
+        </div>
+    
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body{
+  background-color:black
+}
+.blog-post-card{
+  background-color:white;
+  border:black 10px;
+  border-radius:10px;
+  width:60%;
+  text-align:center;
+  margin:auto;
+}
+img{
+  width:200px;
+  height:100px;
+  margin-top:10px;
+}
+.post-img{
+  border-bottom:10px solid black;
+  width:max-content;
+}
+.post-content{
+  padding:20px;
+}
+
+.post-title, .post-excerpt{
+  color:gray;
+  margin:25px
+}
+
+.read-more{
+  color:white;
+  font-size:25px;
+  background-color:black;
+  margin:10px;
+  padding:10px;
+  display:inline-block;
+  border-radius:10px;
+}
+.read-more:hover{
+  background-color:gray;
+}
+
+** end of styles.css **
+

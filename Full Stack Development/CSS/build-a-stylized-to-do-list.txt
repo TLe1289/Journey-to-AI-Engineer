@@ -1,0 +1,97 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Styled To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>My To-Do List</h1>
+    <ul class="todo-list">
+        <li>
+            <input type="checkbox" id="purchase">
+            <label for="purchase">Buy Pokemon cards</label>
+            <ul class="sub-item">
+                <li><a class="sub-item-link" href="https://www.pokemon.com/us" target="_blank">Gotta Catch them ALL</a></li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="fixing">
+            <label for="fixing">Fix your PC from a virus</label>
+            <ul class="sub-item">
+                <li><a class="sub-item-link" href="https://pcpartpicker.com/" target="_blank">Buy new parts</a></li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="animals">
+            <label for="animals">Feed your cats</label>
+            <ul class="sub-item">
+                <li><a class="sub-item-link" href="https://www.petco.com/shop/en/petcostore" target="_blank">What to do when you run out of food. </a></li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="bugs">
+            <label for="bugs">Exterminate all the fruitflies in house</label>
+            <ul class="sub-item">
+                <li><a class="sub-item-link" href="https://www.terminix.com/" target="_blank">Gotta KILL THEM ALL (bugs)</a></li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body{
+  background-color:orange
+}
+
+
+li{
+  background-color:black;
+  margin:10px;
+  padding:2.5px
+}
+li > label{
+  color:white;
+  font-family:cursive;
+  font-size:20px
+
+}
+a{
+  color:red;
+  font-family:cursive;
+  font-size:15px;
+  text-decoration:none;
+}
+
+a:visited{
+  text-decoration: none;
+  color:white;
+}
+
+
+a:hover{
+  color:yellow
+}
+
+a:focus{
+  outline: 5px solid cyan
+}
+
+a:active{
+  color:orange;
+}
+
+
+
+** end of styles.css **
+

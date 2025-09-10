@@ -1,0 +1,72 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+        <label for="name">Type in your name: </label>
+        <input type="text" id="name"><br>
+        <label for="email">Type in your email:</label>
+        <input type="email" id="email"><br>
+        <label for="position">Select the position you are applying for</label>
+        <select id="position">
+            <option value="SE">Software Engineer</option>
+            <option value="QA">Quality Assurance Engineer</option>
+            <option value="PM">Project Manager</option>
+            </select>
+        
+        <fieldset class="radio-group">
+            <input id ="FullTime" type="radio" name="availability" value="FullTime">
+            <label for="FullTime">Full-time</label>
+            <input id ="PartTime" type="radio" name="availability" value="PartTime">
+            <label for="PartTime">Part-time</label>
+            </fieldset>
+            <label for="message">How would you describe yourself?</label><br>
+            <textarea id="message" rows=5 cols=33>Respond here...</textarea><br>
+            <button type=Submit>Submit</button>
+</form>
+</div>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+input:focus, textarea:focus{
+  border-color:gray;
+}
+
+input:invalid,select:invalid,textarea:invalid{
+  border-color:red;
+}
+input:valid,select:valid,textarea:valid{
+  border-color:green;
+}
+button:hover{
+  background-color:orange;
+}
+.radio-group input[type="radio"]:checked{
+  border-color:black;
+  background-color:gray;
+  box-shadow:1px 1px brown;
+} 
+input[type="radio"]:checked + label {
+  color:green
+}
+
+input:first-of-type{
+  font-family:Arial;
+}
+
+
+
+** end of styles.css **
+

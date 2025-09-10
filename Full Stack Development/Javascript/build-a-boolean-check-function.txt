@@ -1,0 +1,12 @@
+** start of script.js **
+
+function booWho(x){
+  if(typeof(x) == "boolean"){
+    return true;
+  }
+  return false;
+}
+
+
+** end of script.js **
+
