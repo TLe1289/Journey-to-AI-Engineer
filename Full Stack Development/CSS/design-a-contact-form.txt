@@ -1,0 +1,83 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link rel="stylesheets" href="styles.css">
+</head>
+
+<body>
+    <div class="form-container">
+    <form>
+        <h2>Enter your Contact Information</h2>  
+    
+        <label for="#name">Name:</label>  
+        <input type="text" id="#name" name="name" required><br>
+        <label for="#email">Email:</label>  
+        <input type="email" id="#email" name="email" required><br>
+        <label for="#message">Message:</label> 
+        <textarea id="#message" name="message" required></textarea><br>
+
+    <button type="submit">Submit</button>
+    </div>
+    </form>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body{
+  background:lightblue;
+  font-family:"Comic Sans MS", "Comic Sans";
+  text-align:center;
+}
+
+label{
+  margin:auto;
+  color:black;
+
+}
+
+.form-container{
+  background-color:White;
+  border-radius: 10px;
+  padding:30px ;
+  margin-bottom:10px;
+  width:auto;
+}
+
+input{
+  padding:5px;
+  margin-bottom:10px;
+  width:150px;
+}
+
+textarea{
+  padding:0px;
+  margin-bottom:15px;
+  margin-top:15px;
+  width:200px;
+  height:50px;
+}
+button{
+  background-color:gray;
+  font-family:"Comic Sans MS", "Comic Sans";
+  border-radius:10px;
+  font-size:15px;
+  margin-bottom:10px;
+  width:100px;
+  height:35px;
+}
+button:hover{
+  background-color:black;
+  color:white;
+}
+
+** end of styles.css **
+
