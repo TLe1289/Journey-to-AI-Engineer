@@ -1,0 +1,9 @@
+** start of script.js **
+
+function reverseString(string){
+  let  reverseString = string.split("").reverse().join("")
+  return reverseString;
+}
+
+** end of script.js **
+

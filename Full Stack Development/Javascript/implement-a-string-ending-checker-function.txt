@@ -1,0 +1,13 @@
+** start of script.js **
+
+function confirmEnding(mainString,subString){
+  for (let index = 0; index<mainString.length; index++){
+    if (mainString.slice(index) == subString){
+      return true;
+    }
+  }
+  return false;
+}
+
+** end of script.js **
+

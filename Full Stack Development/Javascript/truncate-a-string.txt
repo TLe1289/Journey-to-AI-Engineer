@@ -1,0 +1,15 @@
+** start of script.js **
+
+function truncateString(string, number){
+  if (string.length > number){
+    let newstring;
+    newstring = string.slice(0,number)+"...";
+    return newstring;
+  }
+  else{
+    return string;
+  }
+}
+
+** end of script.js **
+
