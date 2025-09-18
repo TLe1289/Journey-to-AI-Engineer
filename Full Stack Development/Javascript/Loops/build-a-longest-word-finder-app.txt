@@ -1,0 +1,15 @@
+** start of script.js **
+
+function findLongestWordLength(sentence){
+  const tokens = sentence.split(" ");
+  let longest = 0
+  for (const token of tokens){
+    if (token.length >longest){
+      longest = token.length;
+    }
+  }
+  return longest;
+}
+
+** end of script.js **
+

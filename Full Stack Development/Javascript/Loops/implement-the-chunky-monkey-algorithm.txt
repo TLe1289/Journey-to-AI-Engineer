@@ -1,0 +1,21 @@
+** start of script.js **
+
+function chunkArrayInGroups(array, number){
+  let supperArray = []
+  for (let superIndex=0; superIndex<array.length;superIndex = superIndex+number){
+    let subArray = [];
+    for(let subIndex = 0; subIndex<number; subIndex++){
+      if(superIndex+subIndex<array.length){
+            subArray.push(array[superIndex+subIndex]);
+        }
+        else{
+            break
+        }
+    }
+    supperArray.push(subArray);
+  }
+  return supperArray;
+}
+
+** end of script.js **
+

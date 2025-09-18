@@ -1,0 +1,17 @@
+** start of script.js **
+
+function mutation(array){
+  let firstWord = array[0].toLowerCase();
+  let secondWord = array[1].toLowerCase();
+  
+  for(const char of secondWord){
+    if(!(firstWord.includes(char))){
+      return false;
+    }
+  }
+  return true;
+}
+
+
+** end of script.js **
+
