@@ -1,0 +1,17 @@
+** start of script.js **
+
+//input: array of with "false" arguments
+//output: array without any arguments
+function bouncer(array){
+  let newArray = []
+  const falsyValues= [false, null, 0 , "", undefined, NaN];
+  for (let arguement of array){
+    if(!(falsyValues.includes(arguement))){
+      newArray.push(arguement);
+    }
+  }
+  return newArray
+}
+
+** end of script.js **
+

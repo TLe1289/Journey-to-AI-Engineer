@@ -1,0 +1,16 @@
+** start of script.js **
+
+function findElement(array, func){
+  if(array.length == 0){
+    return undefined;
+  }
+  for (let units of array){
+    if(func(units)){
+      return units;
+    } 
+  }
+  return undefined;
+}
+
+** end of script.js **
+

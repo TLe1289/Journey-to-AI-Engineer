@@ -1,0 +1,21 @@
+** start of script.js **
+
+function frankenSplice(array1, array2,  location){
+  let resultArray = [];
+  let index = 0;
+  while (index<location){
+    resultArray.push(array2[index]);
+    index++;
+  }
+  for (let addIndex = 0; addIndex<array1.length; addIndex++){
+    resultArray.push(array1[addIndex]);
+  }
+  while(index< array2.length){
+    resultArray.push(array2[index]);
+    index++;
+  }
+  return resultArray;
+}
+
+** end of script.js **
+

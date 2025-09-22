@@ -1,0 +1,71 @@
+** start of script.js **
+
+let inventory = [];
+/* 
+object{
+  name: string
+  quantity: integer
+}
+ */
+
+//input name of an object (string)
+//output index within inventory array
+function findProductIndex(name){
+  const productName = name.toLowerCase();
+  for (let item=0; item<inventory.length; item++){
+    if(inventory[item].name == productName){
+      return item;
+    }
+  }
+  return -1;
+}
+//input object: name and quantity
+//output nothing, but should add items within the inventory array
+/*
+searches for the object location and if it doesn't exist. append the list specifications provided; however, if it already exist, then we just need to add the quantity based on the object given. 
+*/
+function addProduct(object){
+  const location = findProductIndex(object.name);
+  if (location == -1){
+    let newObject = {name:object.name.toLowerCase(), quantity:object.quantity};
+    inventory.push(newObject);
+    console.log(newObject.name+" added to inventory")
+  }
+  else{
+    inventory[location].quantity = inventory[location].quantity + object.quantity;
+    console.log(inventory[location].name+" quantity updated");
+  }
+}
+
+
+//input name and quantity of object (2 parameters)
+//output nothing, but should remoe items within the inventory array
+/*
+Searches for the object location. If it does exist remove the quanityt based on the parameters:
+  1) Displays remaining quanity if the remaining is greater than 1
+  2) remove the object completly from inventory if quantity is 0
+  3) Display a console message, saying the quanityt removal is not possible. TRYING TO REMOVE MORE ITEMS THAN THE REMAINING QUANITTY.  
+*/
+
+function removeProduct(name, quantity){
+  const location = findProductIndex(name);
+  if(location == -1){
+    console.log(name.toLowerCase()+" not found");
+  }
+  else{
+  if(inventory[location].quantity - quantity >0){
+    inventory[location].quantity = inventory[location].quantity - quantity
+    console.log("Remaining "+inventory[location].name.toLowerCase()+" pieces: "+inventory[location].quantity);
+  }
+  else if (inventory[location].quantity - quantity == 0){
+    inventory.splice(location,1);
+  }
+  else{
+    console.log("Not enough "+inventory[location].name.toLowerCase()+" available, remaining pieces: "+inventory[location].quantity);
+  }
+  }
+}
+
+
+** end of script.js **
+

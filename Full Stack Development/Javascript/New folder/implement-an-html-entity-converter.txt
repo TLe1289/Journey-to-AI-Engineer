@@ -1,0 +1,16 @@
+** start of script.js **
+
+// input is a string with characters we want to remove
+// ouput is a string but repalced some of the characters with new string
+function convertHTML(badString){
+  badString = badString.replaceAll("&", "&amp;");
+  badString = badString.replaceAll("<", "&lt;");
+  badString = badString.replaceAll(">", "&gt;");
+  badString = badString.replaceAll("\"", "&quot;");
+  badString = badString.replaceAll("\'", "&apos;");
+  const goodString = badString;
+  return goodString;
+}
+
+** end of script.js **
+

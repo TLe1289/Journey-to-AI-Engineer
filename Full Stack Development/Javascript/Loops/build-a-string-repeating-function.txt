@@ -1,0 +1,14 @@
+** start of script.js **
+
+function repeatStringNumTimes(string, number){
+  let times = 1;
+  let longstring = "" 
+  while(times <= number){
+    longstring = longstring + string;
+    times = times+1;
+  }
+  return longstring;
+}
+
+** end of script.js **
+

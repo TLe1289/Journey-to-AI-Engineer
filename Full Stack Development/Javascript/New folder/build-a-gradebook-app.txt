@@ -1,0 +1,59 @@
+** start of script.js **
+
+//input: array of scores
+//output: average(number)
+function getAverage(scores){
+  let totalscore = 0;
+  for(let score of scores){
+    totalscore += score;
+  }
+  return totalscore/scores.length;
+}
+
+//input: single score
+//output:grade
+function getGrade(score){
+  if(score >= 100){
+    return "A+";
+  }
+  else if(score >= 90 && score <= 99){
+    return "A";
+  }
+  else if(score >= 80 && score <= 89){
+    return "B";
+  }
+  else if(score >= 70 && score <= 79){
+    return "C";
+  }
+  else if(score >= 60 && score <= 69){
+    return "D";
+  }
+  else{
+    return "F";
+  }
+}
+
+//input: Score, must use getGrad
+//output: boolean if they pass
+function hasPassingGrade(score){
+  const grade = getGrade(score) 
+  if(grade == "F"){
+    return false;
+  }
+  else{
+    return true;
+  }
+}
+
+function studentMsg(arrayScore, studentScore){
+  const passed = hasPassingGrade(studentScore) 
+  if (passed){
+    return `Class average: ${getAverage(arrayScore)}. Your grade: ${getGrade(studentScore)}. You passed the course.`
+  }
+  else{
+    return `Class average: ${getAverage(arrayScore)}. Your grade: ${getGrade(studentScore)}. You failed the course.`
+  }
+}
+
+** end of script.js **
+

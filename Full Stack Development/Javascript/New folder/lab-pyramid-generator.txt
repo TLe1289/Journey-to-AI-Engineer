@@ -1,0 +1,27 @@
+** start of script.js **
+
+function pyramid(string, numberOfRows, directionDown){
+  let finalstring ="\n";
+  if(directionDown){
+    let numberOfSpaces = 0
+    let numberofSymbols = numberOfRows+(numberOfRows-1);
+    for(let row =0; row<numberOfRows; row++){
+      finalstring = finalstring+" ".repeat(numberOfSpaces)+string.repeat(numberofSymbols)+"\n";
+      numberOfSpaces++;
+      numberofSymbols = numberofSymbols - 2;
+    }
+  }
+  else{
+    let numberOfSpaces = numberOfRows-1
+    let numberofSymbols = 1;
+    for(let row =0; row<numberOfRows; row++){
+      finalstring = finalstring+" ".repeat(numberOfSpaces)+string.repeat(numberofSymbols)+"\n";
+      numberOfSpaces--;
+      numberofSymbols = numberofSymbols + 2;
+    }
+  }
+  return finalstring;
+}
+
+** end of script.js **
+

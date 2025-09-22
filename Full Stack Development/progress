@@ -1,0 +1,49 @@
+let inventory = [];
+/* 
+object{
+  name: string
+  quantity: integer
+}
+ */
+
+//input name of an object (string)
+//output index within inventory array
+function findProductIndex(name){
+  const productName = name.toLowerCase();
+  for (let item=0; item<inventory.length; item++){
+    if(inventory[item].name == productName){
+      return item;
+    }
+  }
+  return -1;
+}
+
+function addProduct(object){
+  const location = findProductIndex(object.name);
+  if (location == -1){
+    let newObject = {name:object.name.toLowerCase(), quantity:object.quantity};
+    inventory.push(newObject);
+    console.log(newObject.name+" added to inventory")
+  }
+  else{
+    inventory[location].quantity = inventory[location].quantity + object.quantity;
+    console.log(inventory[location].name+" quantity updated");
+  }
+}
+
+function removeProduct(name, quantity){
+  const location = findProductIndex(name);
+  if(location == -1){
+    console.log(name+" not found");
+  }
+  if(foundItem.quantity - quantity >0){
+    foundItem.quantity = foundItem.quantity - quantity
+    console.log("Remaining "+foundItem.name+" pieces: "+foundItem.quantity);
+  }
+  else if (foundItem.quantity - quantity == 0){
+    /* FInd a way to remove items using the object reference */
+  }
+  else{
+    console.log("Not enough "+foundItem.name+" available, remaining pieces: "+foundItem.quantity);
+  }
+}

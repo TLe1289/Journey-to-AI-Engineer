@@ -1,0 +1,18 @@
+** start of script.js **
+
+function largestOfAll(array){
+  let largestArray = [];
+  for (let section of array){
+    let highest= section[0];
+    for (let unit of section){
+      if(unit>highest){
+        highest = unit;
+      }
+    }
+    largestArray.push(highest);
+  }
+  return largestArray;
+}
+
+** end of script.js **
+
